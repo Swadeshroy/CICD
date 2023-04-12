@@ -2,20 +2,19 @@ version: 0.2
 
 phases:
     install:
-        runtime-versions:
-            nodejs: 16
         commands:
-            - echo "installation"
-    pre_build:
-        commands:
-            - echo "In prebuild Phase"
+            - echo installation webserver
+            - sudo apt update
+            - sudo apt install apache2
+    
     build:
         commands:
-            - echo "In the build phase"
+            - echo building file
+            - cp index.html /var/www/html/
            
     post_build:
         commands:
-            - echo "we are in post build phase"
+            - echo configured
 artifact:
         file:
             - "**/*"
