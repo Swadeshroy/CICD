@@ -5,7 +5,7 @@ phases:
         commands:
             - echo installation webserver
             - sudo apt update
-            - sudo apt install apache2
+            - sudo apt install apache2 -y
     
     build:
         commands:
