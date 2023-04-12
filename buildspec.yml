@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+    install:
+        runtime-versions:
+            nodejs: 16
+        commands:
+            - echo "installation"
+    pre_build:
+        commands:
+            - echo "In prebuild Phase"
+    build:
+        commands:
+            - echo "In the build phase"
+           
+    post_build:
+        commands:
+            - echo "we are in post build phase"
