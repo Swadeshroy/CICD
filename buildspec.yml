@@ -16,5 +16,5 @@ phases:
         commands:
             - echo configured
 artifact:
-        file:
-            - "**/*"
+    file:
+        - "**/*"
